@@ -23,7 +23,11 @@ const isFibonacci = (num) => {
   }
   return false;
 };
-console.log(isFibonacci(num));
-console.log(isFibonacci(6765));
-console.log(isFibonacci(45));
-console.log(isFibonacci(8767));
+
+const resultado = isFibonacci(num);
+
+if (resultado === true) {
+  console.log("Esse número faz parte de uma sequencia fibonacci");
+} else {
+  console.log("Esse número não faz parte de uma sequencia fibonacci");
+}
